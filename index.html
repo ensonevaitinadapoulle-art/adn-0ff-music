@@ -3,98 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Portfolio</title>
+    <title>ADN.0FF Music Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-color: black;
-            color: white;
+            background-color: #000000; /* noir */
+            color: #ffffff; /* white */
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            transition: background 0.5s;
         }
-        header {
-            background-color: red;
-            padding: 20px;
-            text-align: center;
-        }
-        .album {
-            margin: 20px;
-            border: 1px solid white;
-            border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.2s;
-        }
-        .album:hover {
-            transform: scale(1.05);
-        }
-        .album img {
-            width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: red;
-            padding: 10px;
-            text-align: center;
-        }
-        .contact-form {
-            margin: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form input, .contact-form textarea {
-            margin: 5px 0;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px;
-            background-color: red;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        /* Add more styles for red theme elements, animations, and responsiveness */
     </style>
 </head>
 <body>
     <header>
-        <h1>My Music Portfolio</h1>
+        <h1>Welcome to the ADN.0FF Music Portfolio</h1>
     </header>
     <main>
-        <section>
-            <h2>Albums</h2>
-            <div class="album">
-                <img src="album_cover_1.jpg" alt="Album Cover 1">
-                <h3>Album Title 1</h3>
-                <iframe src="https://open.spotify.com/embed/album/1" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="album">
-                <img src="album_cover_2.jpg" alt="Album Cover 2">
-                <h3>Album Title 2</h3>
-                <iframe src="https://open.spotify.com/embed/album/2" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+        <section id="tracks">
+            <h2>Tracks</h2>
+            <!-- Spotify embed examples -->
+            <iframe src="https://open.spotify.com/embed/track/your-track-id" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <!-- Repeat for all tracks -->
+            <div><!-- additional track embeds --></div>
         </section>
-        <section>
+        <section id="contact">
             <h2>Contact Me</h2>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </section>
-        <section>
-            <h2>Follow Me</h2>
-            <p>
-                <a href="https://twitter.com/yourprofile" style="color: white;">Twitter</a> | 
-                <a href="https://instagram.com/yourprofile" style="color: white;">Instagram</a> | 
-                <a href="https://facebook.com/yourprofile" style="color: white;">Facebook</a>
-            </p>
-        </section>
     </main>
     <footer>
-        <p>&copy; 2026 My Music Portfolio</p>
+        <h2>Follow Me</h2>
+        <a href="https://twitter.com/yourprofile">Twitter</a>
+        <a href="https://instagram.com/yourprofile">Instagram</a>
+        <!-- Add more social media links -->
     </footer>
 </body>
 </html>
