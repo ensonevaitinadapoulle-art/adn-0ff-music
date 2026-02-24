@@ -4,70 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADN Music</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000000, #B22222);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 1s;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            animation: fadeIn 1.5s;
+        }
+        .biography {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #fff;
+            transition: transform 0.3s;
+        }
+        .biography:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+        .spotify-embed {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: 380px;
+            border: none;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>ADN</h1>
-        <nav>
-            <a href="#bio">Biographie</a>
-            <a href="#music">Musique</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Bienvenue sur la page d'ADN</h1>
     </header>
-    <section id="bio">
+    <section class="biography">
         <h2>Biographie</h2>
-        <p>ADN est un jeune artiste réunionnais qui a débuté sa carrière avec des freestyles postés sur Instagram et TikTok il y a deux ans. Il a rapidement fait le buzz avec son premier single « 2 minutes » avec <a href="https://www.youtube.com/watch?v=link-to-video" target="_blank">lien YouTube</a>, qui est resté en rotation sur Exo FM pendant plusieurs semaines. Depuis, ADN a poursuivi son ascension avec des morceaux aux atmosphères love et mélodiques, tout en explorant de nouvelles sonorités. Cette année, il semble plus déterminé que jamais à s'imposer sur la scène rap locale, avec plusieurs extraits sortis ces derniers mois. Les semaines à venir promettent de belles surprises pour ses fans.</p>
+        <p>ADN est un jeune artiste réunionnais qui a débuté sa carrière avec des freestyles postés sur Instagram et TikTok il y a deux ans. Il a rapidement fait le buzz avec son premier single « 2 minutes » (<a href="https://youtu.be/uTVEph4mv3I?si=3bMybynMYY-brQ4s" style="color: #B22222;">ici</a>), qui est resté en rotation sur Exo FM pendant plusieurs semaines. Depuis, ADN a poursuivi son ascension avec des morceaux aux atmosphères love et mélodiques, tout en explorant de nouvelles sonorités. Cette année, il semble plus déterminé que jamais à s'imposer sur la scène rap locale, avec plusieurs extraits sortis ces derniers mois. Les semaines à venir promettent de belles surprises pour ses fans.</p>
     </section>
-    <section id="music">
-        <h2>Musique</h2>
-        <div class="track">
-            <h3>2 MINUTES</h3>
-            <iframe src="https://open.spotify.com/embed/track/link-for-2-minutes" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
-            <img src="https://link-to-album-cover.jpg" alt="Cover for 2 MINUTES">
-        </div>
-        <div class="track">
-            <h3>BELLA</h3>
-            <iframe src="https://open.spotify.com/embed/track/link-for-bella" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
-            <img src="https://link-to-album-cover.jpg" alt="Cover for BELLA">
-        </div>
-        <div class="track">
-            <h3>COMPTE DESSI MWIN</h3>
-            <iframe src="https://open.spotify.com/embed/track/link-for-compte-dessi-mwin" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
-            <img src="https://link-to-album-cover.jpg" alt="Cover for COMPTE DESSI MWIN">
-        </div>
-        <div class="track">
-            <h3>Y FAIT MAL</h3>
-            <iframe src="https://open.spotify.com/embed/track/link-for-y-fait-mal" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
-            <img src="https://link-to-album-cover.jpg" alt="Cover for Y FAIT MAL">
-        </div>
-        <div class="track">
-            <h3>Comme dans les films</h3>
-            <iframe src="https://open.spotify.com/embed/track/link-for-comme-dans-les-films" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
-            <img src="https://link-to-album-cover.jpg" alt="Cover for Comme dans les films">
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <form action="your-backend-endpoint" method="POST">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-        <div class="social-media">
-            <a href="https://www.instagram.com/yourinstagram/" target="_blank">Instagram</a>
-            <a href="https://www.tiktok.com/@yourtiktok" target="_blank">TikTok</a>
-            <a href="https://open.spotify.com/artist/yourartistid" target="_blank">Spotify</a>
-            <a href="https://www.youtube.com/channel/youryoutube" target="_blank">YouTube</a>
-        </div>
+    <section>
+        <h2>Écoutez ses morceaux</h2>
+        <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/{TRACK_ID_1}" allow="encrypted-media" seamless></iframe>
+        <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/{TRACK_ID_2}" allow="encrypted-media" seamless></iframe>
+        <iframe class="spotify-embed" src="https://open.spotify.com/embed/track/{TRACK_ID_3}" allow="encrypted-media" seamless></iframe>
+        <!-- Add more Spotify embeds as needed -->
     </section>
     <footer>
-        <p>&copy; 2026 ADN. Tous droits réservés.</p>
+        <p>© 2026 ADN Music</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
