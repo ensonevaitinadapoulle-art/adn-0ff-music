@@ -4,26 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADN Music</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to ADN's Official Page</h1>
+        <h1>ADN</h1>
+        <nav>
+            <a href="#bio">Biographie</a>
+            <a href="#music">Musique</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <main>
-        <section id="bio">
-            <h2>Biographie</h2>
-            <p>ADN est un jeune artiste réunionnais qui a débuté sa carrière avec des freestyles postés sur Instagram et TikTok il y a deux ans. Il a rapidement fait le buzz avec son premier single « 2 minutes » (https://youtu.be/uTVEph4mv3I?si=3bMybynMYY-brQ4s), qui est resté en rotation sur Exo FM pendant plusieurs semaines. Depuis, ADN a poursuivi son ascension avec des morceaux aux atmosphères love et mélodiques, tout en explorant de nouvelles sonorités. Cette année, il semble plus déterminé que jamais à s'imposer sur la scène rap locale, avec plusieurs extraits sortis ces derniers mois. Les semaines à venir promettent de belles surprises pour ses fans.</p>
-        </section>
-        <section id="albums">
-            <h2>Albums Récents</h2>
-            <h3>2024 Releases</h3>
-            <img src="path/to/2024_album_cover.jpg" alt="2024 Album Cover" />
-            <h3>2025 Releases</h3>
-            <img src="path/to/2025_album_cover.jpg" alt="2025 Album Cover" />
-        </section>
-    </main>
+    <section id="bio">
+        <h2>Biographie</h2>
+        <p>ADN est un jeune artiste réunionnais qui a débuté sa carrière avec des freestyles postés sur Instagram et TikTok il y a deux ans. Il a rapidement fait le buzz avec son premier single « 2 minutes » avec <a href="https://www.youtube.com/watch?v=link-to-video" target="_blank">lien YouTube</a>, qui est resté en rotation sur Exo FM pendant plusieurs semaines. Depuis, ADN a poursuivi son ascension avec des morceaux aux atmosphères love et mélodiques, tout en explorant de nouvelles sonorités. Cette année, il semble plus déterminé que jamais à s'imposer sur la scène rap locale, avec plusieurs extraits sortis ces derniers mois. Les semaines à venir promettent de belles surprises pour ses fans.</p>
+    </section>
+    <section id="music">
+        <h2>Musique</h2>
+        <div class="track">
+            <h3>2 MINUTES</h3>
+            <iframe src="https://open.spotify.com/embed/track/link-for-2-minutes" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+            <img src="https://link-to-album-cover.jpg" alt="Cover for 2 MINUTES">
+        </div>
+        <div class="track">
+            <h3>BELLA</h3>
+            <iframe src="https://open.spotify.com/embed/track/link-for-bella" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+            <img src="https://link-to-album-cover.jpg" alt="Cover for BELLA">
+        </div>
+        <div class="track">
+            <h3>COMPTE DESSI MWIN</h3>
+            <iframe src="https://open.spotify.com/embed/track/link-for-compte-dessi-mwin" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+            <img src="https://link-to-album-cover.jpg" alt="Cover for COMPTE DESSI MWIN">
+        </div>
+        <div class="track">
+            <h3>Y FAIT MAL</h3>
+            <iframe src="https://open.spotify.com/embed/track/link-for-y-fait-mal" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+            <img src="https://link-to-album-cover.jpg" alt="Cover for Y FAIT MAL">
+        </div>
+        <div class="track">
+            <h3>Comme dans les films</h3>
+            <iframe src="https://open.spotify.com/embed/track/link-for-comme-dans-les-films" width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+            <img src="https://link-to-album-cover.jpg" alt="Cover for Comme dans les films">
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="your-backend-endpoint" method="POST">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.instagram.com/yourinstagram/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@yourtiktok" target="_blank">TikTok</a>
+            <a href="https://open.spotify.com/artist/yourartistid" target="_blank">Spotify</a>
+            <a href="https://www.youtube.com/channel/youryoutube" target="_blank">YouTube</a>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2026 ADN Music</p>
+        <p>&copy; 2026 ADN. Tous droits réservés.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
